@@ -22,7 +22,7 @@ function FileUpload({ onAnalysisStart, onAnalysisComplete }) {
 
     try {
       onAnalysisStart();
-      const response = await axios.post('http://localhost:5000/analyze', formData, {
+      const response = await axios.post('https://wingify-backend.onrender.com/analyze', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
